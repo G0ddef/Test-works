@@ -27,6 +27,7 @@ a {
   overflow: hidden; }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   font-family: "Circe", "Arial", sans-serif;
@@ -333,6 +334,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 26px;
+  min-width: 1300px;
   background-color: #302a31; }
 
 .header__main-nav-list {
@@ -435,7 +437,8 @@ body {
     color: #c16774; }
 
 .page-title {
-  position: relative; }
+  position: relative;
+  min-width: 1300px; }
 
 .page-title__wrapper {
   position: relative;
@@ -1163,6 +1166,7 @@ body {
     font-size: 12px; }
 
 .footer {
+  min-width: 1300px;
   background-color: #302a31; }
 
 .footer__container {
@@ -1456,9 +1460,5 @@ body {
     height: 20px;
     background-image: url("../img/evrika.svg");
     background-repeat: no-repeat; }
-
-.wrapper {
-  margin: 0 auto;
-  width: 1440px; }
 
 /*# sourceMappingURL=style.css.map */
