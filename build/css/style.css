@@ -37,24 +37,23 @@ body {
   background-color: #ffffff; }
 
 .header__last-nav {
+  margin: 0 auto;
+  width: 1300px;
   border-bottom: 1px solid #eceaed; }
 
-.header__container {
-  margin: 0 auto;
-  width: 1300px; }
-  .header__container--top-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+.header__container--top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .header__last-nav-list {
   display: -webkit-box;
@@ -1457,5 +1456,9 @@ body {
     height: 20px;
     background-image: url("../img/evrika.svg");
     background-repeat: no-repeat; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 1440px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,11 @@
 .header__last-nav {
+  margin: 0 auto;
+  width: 1300px;
+
   border-bottom: 1px solid #eceaed;
 }
 
 .header__container {
-  margin: 0 auto;
-  width: 1300px;
-
   &--top-bar {
     display: flex;
     flex-direction: row;
