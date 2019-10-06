@@ -10,6 +10,7 @@ var svgstore = require("gulp-svgstore");
 var imagemin = require("gulp-imagemin");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var del = require("del")
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -20,7 +21,7 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -29,7 +30,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("source"));
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("images", function () {
@@ -46,19 +47,45 @@ gulp.task("sprite", function () {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
+
+gulp.task("copy", function () {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**",
+    "source/*.ico"
+  ], {
+    base: "source"
+  })
+
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task("clean", function () {
+  return del("build");
+});
+
+gulp.task("build", gulp.series(
+  "clean",
+  "copy",
+  "css",
+  "sprite",
+  "html"
+));
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
     ui: false
   });
   gulp.watch("source/sass/**/*.{sass,scss}", gulp.series("css"));
-  gulp.watch("source/*html").on("change", server.reload);
+  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/*html"), gulp.series("html", "refresh");
 });
 
 gulp.task("refresh", function (done) {
@@ -66,10 +93,4 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series(
-  "css", 
-  "html",
-  "sprite",
-  "html"
-));
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("build", "server"));
