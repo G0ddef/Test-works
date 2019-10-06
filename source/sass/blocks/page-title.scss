@@ -1,0 +1,152 @@
+.page-title {
+  position: relative;
+}
+
+.page-title__wrapper {
+  position: relative;
+
+  margin: 0 auto;
+  width: 1300px;
+}
+
+.page-title__inner-wrapper {
+  position: absolute;
+  top: 153px;
+  left: 54%;
+}
+
+.page-title__price {
+  position: absolute;
+  top: 79%;
+  left: 146%;
+
+  display: block;
+  width: 79px;
+}
+
+.page-title__bold {
+  position: absolute;
+  top: 210px;
+  left: -3px;
+
+  margin: 0;
+  width: 550px;
+
+  color: $black;
+  font-size: 43px;
+  font-weight: $bold;
+  line-height: 66px;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+}
+
+.page-title__reference {
+  position: absolute;
+  top: 42px;
+  right: -21px;
+  z-index: 1;
+
+  width: 330px;
+
+  background-color: #f9f9f9;
+}
+
+.page-title__sub-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 41px;
+  padding-left: 43px;
+
+  color: $black;
+  font-size: 18px;
+  font-weight: $bold;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 95px;
+    right: -47px;
+
+    display: block;
+    width: 332px;
+    height: 2px;
+
+    background-color: $gold;
+  }
+}
+
+.page-title__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 68px;
+  padding-bottom: 43px;
+  padding-left: 50px;
+
+  list-style: none;
+}
+
+.page-title__link {
+  display: block;
+
+  color: $black;
+  font-size: 16px;
+  font-weight: $regular;
+  line-height: 36px;
+
+  &:hover {
+    color: #c16774;
+  }
+}
+
+.page-title__slider {
+  padding-top: 63px;
+  padding-left: 220px;
+}
+
+.page-title__slider-control {
+  position: absolute;
+  bottom: 8%;
+  left: 20.9%;
+}
+
+.page-title__toggle {
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  margin-right: 28px;
+  padding: 0;
+
+  background-color: transparent;
+  border: 2px solid $gold;
+
+  &--active {
+    background-color: $gold;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: $gold;
+  }
+}
+
+.page-title__more {
+  position: absolute;
+  bottom: 22.7%;
+  left: 0;
+
+  padding-bottom: 10px;
+  width: 220px;
+
+  color: $gold;
+  font-size: 14px;
+  font-weight: $bold;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  border-bottom: 2px solid $gold;
+}

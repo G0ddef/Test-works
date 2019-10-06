@@ -1,0 +1,328 @@
+.bestsellers {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: 77px;
+  width: 1300px;
+}
+
+.bestsellers__wrapper {
+  position: relative;
+
+  &--hits {
+    padding-bottom: 85px;
+  }
+
+  &--new {
+    padding-bottom: 87px;
+  }
+}
+
+.bestsellers__title {
+  margin: 0 auto;
+  padding-bottom: 16px;
+  width: 420px;
+
+  color: $black;
+  font-size: 32px;
+  font-weight: $bold;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+
+  border-bottom: 2px solid $gold;
+
+  &--special {
+    padding-bottom: 28px;
+  }
+}
+
+.bestsellers__sale {
+  position: absolute;
+  top: 121px;
+  left: 0;
+
+  box-sizing: border-box;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  width: 47px;
+
+  color: $white;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #c16774;
+}
+
+.bestsellers__slider {
+  padding-top: 64px;
+
+  &--new {
+    padding-top: 75px;
+  }
+
+  &--special {
+    padding-top: 75px;
+  }
+}
+
+.bestsellers__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.bestsellers__item {
+  width: 319px;
+
+  border-right: 1px solid #eceaed;
+
+  &:last-child {
+    border: none;
+  }
+
+  &--love {
+    width: 329px;
+  }
+
+  &--corso {
+    width: 329px;
+  }
+
+  &--black {
+    width: 329px;
+  }
+
+  &--fleur {
+    width: 329px;
+  }
+
+  &--fan {
+    width: 329px;
+  }
+
+  &--tease {
+    width: 329px;
+  }
+}
+
+.bestsellers__link {
+  display: block;
+  padding-left: 24px;
+
+  &--love {
+    padding-top: 11px;
+    padding-left: 46px;
+  }
+
+  &--corso {
+    padding-top: 12px;
+    padding-left: 45px;
+  }
+
+  &--collection {
+    padding-top: 23px;
+    padding-left: 59px;
+  }
+
+  &--aigner {
+    padding-left: 37px;
+  }
+
+  &--black {
+    padding-left: 47px;
+  }
+
+  &--fleur {
+    padding-left: 34px;
+  }
+
+  &--aire {
+    padding-left: 46px;
+  }
+
+  &--always {
+    padding-left: 37px;
+  }
+
+  &--fan {
+    padding-left: 47px;
+  }
+
+  &--tease {
+    padding-left: 47px;
+  }
+
+  &--001 {
+    padding-left: 60px;
+  }
+}
+
+.bestsellers__title-name {
+  margin: 0;
+  padding-top: 10px;
+  padding-right: 14px;
+
+  &--love {
+    padding-top: 22px;
+    padding-right: 5px;
+  }
+
+  &--corso {
+    padding-top: 23px;
+    padding-right: 8px;
+  }
+
+  &--collection {
+    padding-top: 35px;
+    padding-right: 0;
+  }
+
+  &--aigner {
+    padding-top: 23px;
+  }
+
+  &--black {
+    padding-top: 23px;
+  }
+
+  &--fleur {
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  &--aire {
+    padding-top: 22px;
+    padding-right: 0;
+  }
+
+  &--always {
+    padding-top: 24px;
+  }
+
+  &--fan {
+    padding-top: 24px;
+  }
+
+  &--tease {
+    margin: 0 auto;
+    padding-top: 31px;
+    width: 217px;
+  }
+
+  &--001 {
+    padding-top: 2px;
+    padding-right: 0;
+  }
+}
+
+.bestsellers__link-name {
+  display: block;
+
+  color: $black;
+  font-size: 16px;
+  font-weight: $regular;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--tease {
+    line-height: 21px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.bestsellers__description {
+  margin: 0 auto;
+  padding-top: 11px;
+  width: 153px;
+
+  color: $black;
+  font-size: 13px;
+  font-weight: $regular;
+  line-height: 21px;
+  text-align: center;
+}
+
+.bestsellers__sales {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 16px;
+  width: 165px;
+}
+
+.bestsellers__price {
+  display: block;
+  margin: 0 auto;
+  padding-top: 17px;
+  width: 83px;
+
+  color: $black;
+  font-size: 13px;
+  font-weight: $regular;
+  line-height: 24px;
+
+  &--first {
+    padding-top: 0;
+    padding-left: 19px;
+    width: auto;
+  }
+
+  &--crossed {
+    padding-top: 0;
+    padding-left: 5px;
+    width: auto;
+
+    color: #c16774;
+    text-decoration: line-through;
+  }
+}
+
+.bestsellers__slider-control {
+  position: relative;
+}
+
+.bestsellers__slider-toggle {
+  position: absolute;
+  top: -253px;
+
+  background-color: $white;
+  border: none;
+
+  &--left {
+    left: -37px;
+  }
+
+  &--right {
+    right: -40px;
+  }
+
+  &--special {
+    top: -252px;
+  }
+}
+
+.bestsellers__toggle-left {
+  fill: #ebeaea;
+}
+
+.bestsellers__toggle-right {
+  fill: $gold;
+
+  transform: rotate(180deg);
+}

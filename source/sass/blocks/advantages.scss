@@ -1,0 +1,107 @@
+.advantages {
+  margin: 0 auto;
+  padding-top: 54px;
+  padding-bottom: 66px;
+  width: 1300px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+
+  padding-left: 110px;
+
+  &--production {
+    width: 112px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 9px;
+      left: 0;
+
+      display: block;
+      width: 80px;
+      height: 1px;
+
+      background-color: #eceaed;
+    }
+  }
+
+  &--delivery {
+    padding-left: 218px;
+    width: 172px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 9px;
+      left: 107px;
+
+      display: block;
+      width: 80px;
+      height: 1px;
+
+      background-color: #eceaed;
+    }
+  }
+
+  &--sale {
+    padding-left: 157px;
+    width: 132px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 9px;
+      left: 47px;
+
+      display: block;
+      width: 80px;
+      height: 1px;
+
+      background-color: #eceaed;
+    }
+  }
+
+  &--express {
+    padding-left: 198px;
+    width: 146px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 9px;
+      left: 89px;
+
+      display: block;
+      width: 80px;
+      height: 1px;
+
+      background-color: #eceaed;
+    }
+  }
+}
+
+.advantages__link {
+  display: block;
+
+  color: $black;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 19px;
+  text-transform: uppercase;
+}

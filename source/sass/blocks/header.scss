@@ -1,0 +1,440 @@
+.header__last-nav {
+  border-bottom: 1px solid #eceaed;
+}
+
+.header__container {
+  margin: 0 auto;
+  width: 1300px;
+
+  &--top-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.header__last-nav-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  list-style: none;
+}
+
+.header__last-nav-item {
+  padding-right: 55px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.header__last-nav-link {
+  display: block;
+
+  color: $black;
+  font-size: 13px;
+  font-weight: $regular;
+  line-height: 24px;
+
+  &:hover {
+    color: $gold;
+  }
+}
+
+.header__login-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header__login-item {
+  position: relative;
+
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 43px;
+  padding-right: 13px;
+
+  border-left: 1px solid #eceaed;
+
+  &--lk {
+    width: 185px;
+  }
+
+  &--select {
+    width: 125px;
+  }
+}
+
+.header__value {
+  position: absolute;
+  top: 6px;
+  right: 0;
+
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  color: $white;
+  font-size: 10px;
+  font-weight: $bold;
+  line-height: 15px;
+  text-align: center;
+
+  background-color: $gold;
+  border-radius: 50%;
+}
+
+.header__search-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1300px;
+}
+
+.header__main-logo {
+  box-sizing: border-box;
+  padding-top: 9px;
+  height: 113px;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &--contacts {
+    padding-top: 10px;
+    padding-left: 97px;
+    width: 803px;
+  }
+}
+
+.header__form {
+  position: relative;
+}
+
+.header__search-input {
+  box-sizing: border-box;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  width: 803px;
+  height: 52px;
+
+  font-family: "Circe", "Arial", sans-serif;
+  color: #302a31;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  border: none;
+  border-bottom: 2px solid $gold;
+
+  &::placeholder {
+    font-family: "Circe", "Arial", sans-serif;
+    color: #302a31;
+    font-size: 14px;
+    font-weight: $regular;
+    line-height: 24px;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.header__button {
+  position: absolute;
+  top: 16px;
+  right: -1px;
+
+  display: block;
+  width: 25px;
+  height: 25px;
+
+  background-color: $white;
+  border: none;
+}
+
+.header__button-search {
+  fill: $gold;
+
+  &:hover {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.header__contacts-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-top: 29px;
+
+  list-style: none;
+}
+
+.header__contacts-item {
+  position: relative;
+
+  &--tel::before {
+    content: "";
+
+    position: absolute;
+    top: -4px;
+    left: -37px;
+
+    display: block;
+    width: 32px;
+    height: 40px;
+
+    background-image: url("../img/tel.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--mail::before {
+    content: "";
+
+    position: absolute;
+    top: 1px;
+    left: -36px;
+
+    display: block;
+    width: 20px;
+    height: 25px;
+
+    background-image: url("../img/mail.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--circle::before {
+    content: "";
+
+    position: absolute;
+    top: 2px;
+    left: -39px;
+
+    display: block;
+    width: 17px;
+    height: 22px;
+
+    background-image: url("../img/circle.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.header__contacts-link {
+  color: $black;
+  font-size: 14px;
+  font-weight: $bold;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+
+.header__basket {
+  position: relative;
+
+  margin-top: 26px;
+  margin-left: 109px;
+  width: 90px;
+  height: 84px;
+
+  background-color: $gold;
+
+  &:hover {
+    background-color: #cfad73;
+  }
+}
+
+.header__basket-link {
+  display: block;
+  padding-top: 15px;
+  padding-left: 16px;
+}
+
+.header__basket-svg {
+  fill: $white;
+}
+
+.header__number {
+  position: absolute;
+  top: 3px;
+  right: 9px;
+
+  display: block;
+
+  color: $white;
+  font-size: 10px;
+  font-weight: $bold;
+  line-height: 24px;
+}
+
+.header__main-nav {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 26px;
+
+  background-color: #302a31;
+}
+
+.header__main-nav-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  width: 1300px;
+
+  list-style: none;
+}
+
+.header__main-nav-item {
+  position: relative;
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 57px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  &--parfums {
+    padding-right: 59px;
+  }
+
+  &--new {
+    padding-right: 59px;
+  }
+
+  &--makeup {
+    padding-right: 59px;
+  }
+
+  &--leather {
+    padding-right: 61px;
+  }
+
+  &--hair {
+    padding-right: 62px;
+  }
+
+  &--man {
+    padding-right: 61px;
+  }
+
+  &--organic {
+    padding-right: 59px;
+  }
+
+  &--gift {
+    padding-right: 38px;
+  }
+
+  &--sale {
+    padding-left: 50px;
+
+    background-color: #c16774;
+  }
+
+  &:hover > .header__sub-menu {
+    display: flex;
+  }
+}
+
+.header__main-nav-link {
+  display: block;
+
+  color: $white;
+  font-size: 16px;
+  font-weight: $regular;
+  line-height: 24px;
+
+  &--sale {
+    position: relative;
+
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -18px;
+      right: -76px;
+
+      display: block;
+      width: 77px;
+      height: 60px;
+
+      background-color: #c16774;
+    }
+  }
+
+  &:hover {
+    color: $gold;
+  }
+}
+
+.header__sub-menu {
+  position: absolute;
+  top: 58px;
+  left: -31px;
+  z-index: 2;
+
+  display: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 255px;
+
+  background-color: $white;
+  list-style: none;
+}
+
+.header__sub-menu-item {
+  padding-left: 27px;
+
+  &:first-child {
+    padding-top: 16px;
+
+    border-top: 4px solid $gold;
+  }
+
+  &:last-child {
+    padding-bottom: 17px;
+  }
+}
+
+.header__sub-menu-link {
+  color: $black;
+  font-size: 16px;
+  font-weight: $regular;
+  line-height: 36px;
+
+  &:hover {
+    color: #c16774;
+  }
+}

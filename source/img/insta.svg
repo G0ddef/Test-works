@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 551.03 551.03" style="enable-background:new 0 0 551.03 551.03;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#XMLID_2_);}
+	.st1{fill:url(#XMLID_3_);}
+	.st2{fill:url(#XMLID_4_);}
+</style>
+<g id="XMLID_13_">
+	
+		<linearGradient id="XMLID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="763.4286" x2="275.517" y2="218.2798" gradientTransform="matrix(1 0 0 1 0 -214)">
+		<stop  offset="0" style="stop-color:#E09B3D"/>
+		<stop  offset="0.3" style="stop-color:#C74C4D"/>
+		<stop  offset="0.6" style="stop-color:#C21975"/>
+		<stop  offset="1" style="stop-color:#7024C4"/>
+	</linearGradient>
+	<path id="XMLID_17_" class="st0" d="M386.88,0H164.16C73.64,0,0,73.64,0,164.16v222.72c0,90.52,73.64,164.16,164.16,164.16h222.72
+		c90.52,0,164.16-73.64,164.16-164.16V164.16C551.03,73.64,477.39,0,386.88,0z M495.6,386.88c0,60.04-48.68,108.72-108.72,108.72
+		H164.16c-60.04,0-108.72-48.68-108.72-108.72V164.16c0-60.05,48.68-108.72,108.72-108.72h222.72
+		c60.04,0,108.72,48.68,108.72,108.72L495.6,386.88L495.6,386.88z"/>
+	
+		<linearGradient id="XMLID_3_" gradientUnits="userSpaceOnUse" x1="275.517" y1="763.4286" x2="275.517" y2="218.2798" gradientTransform="matrix(1 0 0 1 0 -214)">
+		<stop  offset="0" style="stop-color:#E09B3D"/>
+		<stop  offset="0.3" style="stop-color:#C74C4D"/>
+		<stop  offset="0.6" style="stop-color:#C21975"/>
+		<stop  offset="1" style="stop-color:#7024C4"/>
+	</linearGradient>
+	<path id="XMLID_81_" class="st1" d="M275.52,133C196.93,133,133,196.93,133,275.52s63.93,142.52,142.52,142.52
+		s142.52-63.93,142.52-142.52S354.1,133,275.52,133z M275.52,362.6c-48.1,0-87.08-38.99-87.08-87.08s38.99-87.08,87.08-87.08
+		c48.1,0,87.08,38.99,87.08,87.08C362.6,323.61,323.61,362.6,275.52,362.6z"/>
+	
+		<linearGradient id="XMLID_4_" gradientUnits="userSpaceOnUse" x1="418.306" y1="763.4286" x2="418.306" y2="218.2798" gradientTransform="matrix(1 0 0 1 0 -214)">
+		<stop  offset="0" style="stop-color:#E09B3D"/>
+		<stop  offset="0.3" style="stop-color:#C74C4D"/>
+		<stop  offset="0.6" style="stop-color:#C21975"/>
+		<stop  offset="1" style="stop-color:#7024C4"/>
+	</linearGradient>
+	<circle id="XMLID_83_" class="st2" cx="418.31" cy="134.07" r="34.15"/>
+</g>
+</svg>

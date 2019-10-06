@@ -1,0 +1,336 @@
+.footer {
+  background-color: #302a31;
+}
+
+.footer__container {
+  margin: 0 auto;
+  width: 1300px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 63px;
+
+  border-bottom: 1px solid #3f3a41;
+}
+
+.footer__about-company {
+  padding-top: 70px;
+  width: 200px;
+
+  &--catalog {
+    padding-left: 133px;
+  }
+}
+
+.footer__title {
+  margin: 0;
+  padding-bottom: 22px;
+
+  color: $white;
+  font-size: 18px;
+  font-weight: $bold;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.footer__company-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer__company-link {
+  display: block;
+
+  color: $white;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 26px;
+
+  &:hover {
+    color: #caae81;
+  }
+}
+
+.footer__contacts {
+  padding-top: 69px;
+  padding-left: 128px;
+  width: 210px;
+}
+
+.footer__tel {
+  display: block;
+
+  color: $white;
+  font-size: 18px;
+  font-weight: $bold;
+  line-height: 24px;
+}
+
+.footer__work-time {
+  position: relative;
+
+  margin: 0;
+  padding-top: 22px;
+
+  color: $white;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 26px;
+
+  &--social {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 25px;
+      right: 37px;
+
+      display: block;
+      width: 26px;
+      height: 26px;
+
+      background-image: url("../img/whatsapp.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 27px;
+      right: 3px;
+
+      display: block;
+      width: 19px;
+      height: 20px;
+
+      background-image: url("../img/viber.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--time {
+    padding-top: 14px;
+  }
+}
+
+.footer__contacts-list {
+  margin: 0;
+  padding-top: 21px;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.footer__contacts-item {
+  position: relative;
+
+  padding-bottom: 8px;
+  padding-left: 30px;
+
+  &--tel {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -5px;
+      left: -11px;
+
+      display: block;
+      width: 39px;
+      height: 42px;
+
+      background-image: url("../img/tel.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--mail {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: -5px;
+
+      display: block;
+      width: 21px;
+      height: 24px;
+
+      background-image: url("../img/mail.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--skype {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -6px;
+      left: -6px;
+
+      display: block;
+      width: 25px;
+      height: 27px;
+
+      background-image: url("../img/skype.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.footer__contacts-link {
+  display: block;
+
+  color: $white;
+  font-size: 14px;
+  font-weight: $bold;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.footer__subscribe {
+  padding-top: 70px;
+  padding-left: 119px;
+  width: 310px;
+}
+
+.footer__subscribe-wrapper {
+  margin: 0;
+
+  &--button {
+    padding-top: 21px;
+    margin-left: auto;
+    width: 110px;
+  }
+}
+
+.footer__description {
+  display: block;
+  margin-bottom: 14px;
+
+  color: $white;
+  font-size: 18px;
+  font-weight: $bold;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.footer__email {
+  box-sizing: border-box;
+  width: 310px;
+  height: 46px;
+
+  font-family: "Circe", "Arial", sans-serif;
+  color: $white;
+  font-size: 13px;
+  font-weight: $regular;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $gold;
+
+  &::placeholder {
+    font-family: "Circe", "Arial", sans-serif;
+    color: $white;
+    font-size: 13px;
+    font-weight: $regular;
+    line-height: 24px;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+}
+
+.footer__button {
+  color: $gold;
+  font-size: 14px;
+  font-weight: $bold;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    font-size: 15px;
+  }
+}
+
+.footer__insta {
+  display: flex;
+  flex-direction: row;
+  padding-top: 48px;
+}
+
+.footer__insta-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  line-height: 66px;
+  text-align: center;
+
+  background-color: $white;
+  border-radius: 50%;
+}
+
+.footer__insta-description {
+  margin: 0;
+  padding-top: 13px;
+  padding-left: 20px;
+
+  color: $white;
+  font-size: 14px;
+  font-weight: $bold;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.footer__bottom-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 39px;
+}
+
+.footer__copyright {
+  color: $white;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 26px;
+}
+
+.footer__development {
+  position: relative;
+
+  padding-right: 41px;
+
+  color: $white;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 26px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../img/evrika.svg");
+    background-repeat: no-repeat;
+  }
+}
